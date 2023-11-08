@@ -13,7 +13,96 @@
 .biophoto {
     border: inset; 
 }
+
+.petsarea {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+#petsheader {
+    grid-column: 1/span 2;
+    text-align: center; 
+}
+
+.petphoto {
+    border: black solid 2px;
+}
+
 /* About styling */
+h3 {
+    text-align: center;
+}
 
+.previousarea {
+    display: grid;
+    grid-template: 20% 80%/1fr 1fr 1fr; 
+}
 
+#previousheader {
+    grid-column: 1/span 3; 
+}
+
+.educationarea {
+    display: grid;
+    grid-template: 20% 80%/ 1fr 1fr 1fr 1fr; 
+}
+
+#educationheader {
+    grid-column: 1/ span 4;
+}
+
+.volunteerskillsarea {
+    display: grid;
+    grid-template: 20% 80%/1fr 1fr 1fr;
+}
+
+.volunteerarea {
+    grid-area: 1/1/span 2/span 1;
+    display: grid; 
+    grid-template: 1fr/1fr;
+    border: solid white 5px;
+}
+
+.skillarea {
+    grid-area: 1/2/span 2/ span 2;
+    display: grid;
+    grid-template: 20% 80%/50% 50%;
+    border: solid white 5px;
+}
+
+#skillheader {
+    grid-row: 1/span 1;
+    grid-column: 1/span 2;
+}
+
+#skillcolumn1 {
+    grid-row: 2/span 1; 
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#skillcolumn2 {
+   grid-row: 2/ span 1; 
+   grid-column: 2/3;
+   text-align: center;
+}
+
+ul.skilllist {
+    list-style: none;
+}
+
+.hobbiesarea {
+    display: grid; 
+    grid-template: 20% 80%/ 1fr 1fr 1fr; 
+}
+
+#hobbyheader {
+    grid-row: 1/span 1; 
+    grid-column: 1/4; 
+}
+
+section {
+    background-color: lightgray;
+    border: white 5px solid;
+}
 /* Portfolio styling */
