@@ -1,24 +1,86 @@
-/* Nav Styling */
+/* Nav & shared Styling */
+nav {
+    background-color: darkgray;
+    display: flex; 
+    margin: auto 0 0 0; 
+    justify-content: space-around; 
+}
 
+.navitem {
+    border: outset darkgray 3px; 
+    color: white; 
+    text-decoration: none; 
+    font-family: cursive; 
+    width: 33%;
+    text-align: center; 
+}
+
+body {
+    overflow: hidden; 
+}
+
+section {
+    margin: 0 auto;
+    padding: 5px;
+    /* margin: 5px; */
+}
+
+h3 {
+    text-align: center;
+}
+
+.toparea {
+    margin-top: 0px; 
+}
 
 /* Home styling */
+
 .bio {
     display: flex;
-}
-.bioinfo {
-    display: block;
-    margin: 10px;
+    justify-content: center;
+    background: rgb(238,238,238);
+    background: linear-gradient(180deg, rgb(238, 238, 238) 10%, rgba(170, 170, 170,1) 100%);
+
 }
 .biophoto {
-    border: inset; 
+    border: inset 5px lightgray; 
     margin: 5px; 
 }
 
-.petsarea {
-    display: grid;
-    grid-template: 20% 80% / 50% 50%;
-    text-align: center;
+.LI {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
 }
+
+.bioinfo {
+    display: block;
+    padding: 10px;
+}
+
+.introarea {
+    text-align: center; 
+    /* background: rgb(238,238,238);
+    background: linear-gradient(180deg, rgba(170,170,170,1) 5%, rgba(129,129,129,1) 100%); */
+    background-color: rgba(170, 170, 170,1);
+}
+
+.petsarea {
+    text-align: center;
+    background: rgb(153,153,153);
+    background: linear-gradient(180deg, rgba(170, 170, 170,1) 20%, rgba(48,48,48,1) 100%);
+    padding: 10px;
+    height: 100vw;
+}
+
+.petcolumns {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .petname{
+    color: white;
+} */
 
 #petsheader {
     grid-column: 1/span 2;
@@ -31,10 +93,12 @@
     margin: 5px;
 }
 
-/* About styling */
-h3 {
-    text-align: center;
+.petphotoarea {
+    padding-bottom: 20px;
+    
 }
+
+/* About styling */
 
 .previousarea {
     display: grid;
@@ -104,10 +168,6 @@ ul.skilllist {
     grid-column: 1/4; 
 }
 
-section {
-    background-color: lightgray;
-    border: white 5px solid;
-}
 /* Portfolio styling */
 .project {
     display: flex;
@@ -119,4 +179,17 @@ section {
     width: 475px;
     /* Need to replace with more consistent images and add responsive styling instead */
     margin: 5px;
+}
+
+/* Responsive styling */
+@media (max-width:768px) {
+    nav {
+        flex-direction: column; 
+    }
+    .navitem {
+        width: 100%;
+    }
+    .petphoto {
+        margin: auto;
+    }
 }
