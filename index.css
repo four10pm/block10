@@ -1,0 +1,19 @@
+/* Nav Styling */
+
+
+/* Home styling */
+.bio {
+    display: flex;
+    margin: 10px;
+}
+.bioinfo {
+    display: block;
+    margin: 10px;
+}
+.biophoto {
+    border: inset; 
+}
+/* About styling */
+
+
+/* Portfolio styling */
