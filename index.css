@@ -4,7 +4,6 @@
 /* Home styling */
 .bio {
     display: flex;
-    margin: 10px;
 }
 .bioinfo {
     display: block;
@@ -12,11 +11,13 @@
 }
 .biophoto {
     border: inset; 
+    margin: 5px; 
 }
 
 .petsarea {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 20% 80% / 50% 50%;
+    text-align: center;
 }
 
 #petsheader {
@@ -26,6 +27,8 @@
 
 .petphoto {
     border: black solid 2px;
+    height: 250px;
+    margin: 5px;
 }
 
 /* About styling */
@@ -106,3 +109,14 @@ section {
     border: white 5px solid;
 }
 /* Portfolio styling */
+.project {
+    display: flex;
+}
+
+.projectimage {
+    border: black solid 2px;
+    height: 250px;
+    width: 475px;
+    /* Need to replace with more consistent images and add responsive styling instead */
+    margin: 5px;
+}
