@@ -1,22 +1,22 @@
 /* Nav & shared Styling */
 nav {
     background-color: darkgray;
-    display: flex; 
-    margin: auto 0 0 0; 
-    justify-content: space-around; 
+    display: flex;
+    margin: auto 0 0 0;
+    justify-content: space-around;
 }
 
 .navitem {
-    border: outset darkgray 3px; 
-    color: white; 
-    text-decoration: none; 
-    font-family: cursive; 
+    border: outset darkgray 3px;
+    color: white;
+    text-decoration: none;
+    font-family: cursive;
     width: 33%;
-    text-align: center; 
+    text-align: center;
 }
 
 body {
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 section {
@@ -30,21 +30,14 @@ h3 {
 }
 
 .toparea {
-    margin-top: 0px; 
+    margin-top: 0px;
 }
 
 /* Home styling */
 
-.bio {
-    display: flex;
-    justify-content: center;
-    background: rgb(238,238,238);
-    background: linear-gradient(180deg, rgb(238, 238, 238) 10%, rgba(170, 170, 170,1) 100%);
-
-}
 .biophoto {
-    border: inset 5px lightgray; 
-    margin: 5px; 
+    border: inset 5px lightgray;
+    margin: 5px;
 }
 
 .LI {
@@ -58,17 +51,23 @@ h3 {
     padding: 10px;
 }
 
+/* gradient - will keep working on this */
+.bio {
+    display: flex;
+    justify-content: center;
+    background: rgb(238, 238, 238);
+    background: linear-gradient(180deg, rgb(238, 238, 238) 20%, rgba(170, 170, 170, 1) 100%);
+}
+
 .introarea {
-    text-align: center; 
-    /* background: rgb(238,238,238);
-    background: linear-gradient(180deg, rgba(170,170,170,1) 5%, rgba(129,129,129,1) 100%); */
-    background-color: rgba(170, 170, 170,1);
+    text-align: center;
+    background-color: rgba(170, 170, 170, 1);
 }
 
 .petsarea {
     text-align: center;
-    background: rgb(153,153,153);
-    background: linear-gradient(180deg, rgba(170, 170, 170,1) 20%, rgba(48,48,48,1) 100%);
+    background: rgb(153, 153, 153);
+    background: linear-gradient(180deg, rgba(170, 170, 170, 1) 0%, rgba(144, 144, 144, 1) 25%, rgba(48, 48, 48, 1) 100%);
     padding: 10px;
     height: 100vw;
 }
@@ -78,13 +77,9 @@ h3 {
     justify-content: space-around;
 }
 
-/* .petname{
-    color: white;
-} */
-
 #petsheader {
     grid-column: 1/span 2;
-    text-align: center; 
+    text-align: center;
 }
 
 .petphoto {
@@ -95,23 +90,23 @@ h3 {
 
 .petphotoarea {
     padding-bottom: 20px;
-    
+
 }
 
 /* About styling */
 
 .previousarea {
     display: grid;
-    grid-template: 20% 80%/1fr 1fr 1fr; 
+    grid-template: 20% 80%/1fr 1fr 1fr;
 }
 
 #previousheader {
-    grid-column: 1/span 3; 
+    grid-column: 1/span 3;
 }
 
 .educationarea {
     display: grid;
-    grid-template: 20% 80%/ 1fr 1fr 1fr 1fr; 
+    grid-template: 20% 80%/ 1fr 1fr 1fr 1fr;
 }
 
 #educationheader {
@@ -125,7 +120,7 @@ h3 {
 
 .volunteerarea {
     grid-area: 1/1/span 2/span 1;
-    display: grid; 
+    display: grid;
     grid-template: 1fr/1fr;
     border: solid white 5px;
 }
@@ -143,15 +138,15 @@ h3 {
 }
 
 #skillcolumn1 {
-    grid-row: 2/span 1; 
+    grid-row: 2/span 1;
     grid-column: 1/2;
     text-align: center;
 }
 
 #skillcolumn2 {
-   grid-row: 2/ span 1; 
-   grid-column: 2/3;
-   text-align: center;
+    grid-row: 2/ span 1;
+    grid-column: 2/3;
+    text-align: center;
 }
 
 ul.skilllist {
@@ -159,13 +154,17 @@ ul.skilllist {
 }
 
 .hobbiesarea {
-    display: grid; 
-    grid-template: 20% 80%/ 1fr 1fr 1fr; 
+    display: grid;
+    grid-template: 20% 80%/ 1fr 1fr 1fr;
 }
 
 #hobbyheader {
-    grid-row: 1/span 1; 
-    grid-column: 1/4; 
+    grid-row: 1/span 1;
+    grid-column: 1/4;
+}
+
+.hobbyphoto {
+    height: 250px;
 }
 
 /* Portfolio styling */
@@ -184,11 +183,13 @@ ul.skilllist {
 /* Responsive styling */
 @media (max-width:768px) {
     nav {
-        flex-direction: column; 
+        flex-direction: column;
     }
+
     .navitem {
         width: 100%;
     }
+
     .petphoto {
         margin: auto;
     }
