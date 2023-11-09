@@ -48,7 +48,7 @@ div {
 }
 
 .homebody section {
-    background-color:rgba(31, 30, 87, .5);
+    background-color: rgba(31, 30, 87, .5);
     padding: 10px;
     overflow: clip;
 }
@@ -60,11 +60,11 @@ div {
 
 .LI {
     color: white;
-    padding-top: 5px; 
+    padding-top: 5px;
 }
 
 .LI:hover {
-    font-style: italic; 
+    font-style: italic;
 }
 
 .bioinfo {
@@ -82,8 +82,9 @@ div {
     text-align: center;
 
 }
+
 .introarea p {
-    margin-block-start: auto; 
+    margin-block-start: auto;
 }
 
 .petsarea {
@@ -95,7 +96,7 @@ div {
 .petcolumns {
     display: flex;
     justify-content: center;
-    grid-column-gap: 1em; 
+    grid-column-gap: 1em;
 }
 
 #petsheader {
@@ -104,7 +105,7 @@ div {
 }
 
 .petphoto {
-    border: black solid 2px;
+    border: rgb(31, 30, 87) solid 2px;
     height: 250px;
     margin: 5px;
 }
@@ -115,7 +116,7 @@ div {
 }
 
 .stylingdiv {
-    height: 10vh; 
+    height: 10vh;
 }
 
 form {
@@ -141,7 +142,7 @@ label {
 
 .formintro {
     font-family: cursive;
-    font-size:large;
+    font-size: large;
 }
 
 .submit {
@@ -157,7 +158,7 @@ label {
 
 .thankyou {
     background-color: rgba(31, 30, 87, .5);
-    border: double navy 7px;
+    border: double rgb(31, 30, 87) 7px;
     text-align: center;
     padding: 10px;
     width: max-content;
@@ -171,8 +172,9 @@ label {
 }
 
 .tybutton {
-    background-color: navy;
-    border-color: navy;
+    background-color: rgb(31, 30, 87);
+    border-color: rgb(31, 30, 87);
+    color: white; 
 }
 
 .tylink {
@@ -194,7 +196,7 @@ label {
 .previous {
     background-color: rgba(31, 30, 87, .5);
     margin: 5px auto;
-    border: navy 2px solid;
+    border: rgb(31, 30, 87) 2px solid;
 }
 
 .educationarea {
@@ -210,7 +212,7 @@ label {
 
 .education {
     background-color: rgba(31, 30, 87, .5);
-    border: navy 2px solid;
+    border: rgb(31, 30, 87) 2px solid;
 }
 
 .volunteerskillsarea {
@@ -229,7 +231,7 @@ label {
 
 .volunteercolumn {
     background-color: rgba(31, 30, 87, .5);
-    border: navy 2px solid;
+    border: rgb(31, 30, 87) 2px solid;
 }
 
 .skillarea {
@@ -241,7 +243,7 @@ label {
 
 .skillcolumns {
     background-color: rgba(31, 30, 87, .5);
-    border: navy 2px solid;
+    border: rgb(31, 30, 87) 2px solid;
     grid-area: 2/1/span 2/span 2;
     display: grid;
     grid-template: 0px/50% 50%;
@@ -277,7 +279,7 @@ ul.skilllist {
 
 .hobby {
     background-color: rgba(31, 30, 87, .5);
-    border: navy 2px solid;
+    border: rgb(31, 30, 87) 2px solid;
     grid-row: 2/span 1;
     grid-column: 1/span 3;
     display: grid;
@@ -307,19 +309,31 @@ ul.skilllist {
 .hobbyphoto {
     height: 250px;
     width: 335px;
+    border: rgb(31, 30, 87) solid 1px; 
 }
 
 /* Portfolio styling */
 .project {
     display: flex;
+    border: dotted rgba(31, 30, 87, 1) 2px;
+    background-color: rgba(31, 30, 87, .5);
+    margin-top: 5px;
+    padding: 5px;
 }
 
 .projectimage {
-    border: black solid 2px;
-    height: 250px;
+    border: rgb(31, 30, 87) solid 2px;
+    height: auto;
     width: 475px;
-    /* Need to replace with more consistent images and add responsive styling instead */
     margin: 5px;
+}
+
+.project a {
+    color: white;
+}
+
+.project a:hover {
+    font-style: italic;
 }
 
 /* Responsive styling */
@@ -333,7 +347,7 @@ ul.skilllist {
     }
 
     .homebody {
-        overflow: scroll; 
+        overflow: scroll;
     }
 
     .petcolumns {
@@ -343,7 +357,7 @@ ul.skilllist {
     .petphoto {
         margin: auto;
     }
-    
+
     .stylingdiv {
         display: none;
     }
@@ -357,8 +371,8 @@ ul.skilllist {
     }
 
     .formintro {
-        margin-top: 0px; 
-        padding-top: 5px; 
+        margin-top: 0px;
+        padding-top: 5px;
     }
 
     .educationarea {
@@ -375,5 +389,14 @@ ul.skilllist {
 
     .hobby {
         display: block;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .projectimage {
+        width: 90%;
+        align-self: center;
     }
 }
