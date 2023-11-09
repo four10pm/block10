@@ -1,13 +1,13 @@
 /* Nav & shared Styling */
 nav {
-    background-color: darkgray;
+    background-color: rgba(31,30,87,1);
     display: flex;
     margin: auto 0 0 0;
     justify-content: space-around;
 }
 
 .navitem {
-    border: outset darkgray 3px;
+    border: outset rgba(31,30,87,1) 3px;
     color: white;
     text-decoration: none;
     font-family: cursive;
@@ -15,14 +15,17 @@ nav {
     text-align: center;
 }
 
-body {
+/* body {
     overflow: hidden;
-}
+} */
 
 section {
     margin: 0 auto;
     padding: 5px;
-    /* margin: 5px; */
+}
+
+div {
+    padding: 5px;
 }
 
 h3 {
@@ -55,19 +58,14 @@ h3 {
 .bio {
     display: flex;
     justify-content: center;
-    background: rgb(238, 238, 238);
-    background: linear-gradient(180deg, rgb(238, 238, 238) 20%, rgba(170, 170, 170, 1) 100%);
 }
 
 .introarea {
     text-align: center;
-    background-color: rgba(170, 170, 170, 1);
 }
 
 .petsarea {
     text-align: center;
-    background: rgb(153, 153, 153);
-    background: linear-gradient(180deg, rgba(170, 170, 170, 1) 0%, rgba(144, 144, 144, 1) 25%, rgba(48, 48, 48, 1) 100%);
     padding: 10px;
     height: 100vw;
 }
@@ -98,10 +96,17 @@ h3 {
 .previousarea {
     display: grid;
     grid-template: 20% 80%/1fr 1fr 1fr;
+    
 }
 
 #previousheader {
     grid-column: 1/span 3;
+}
+
+.previous {
+    background-color: rgb(0, 0, 128,.5);
+    margin: 5px; 
+    border: navy 2px solid;
 }
 
 .educationarea {
@@ -113,6 +118,12 @@ h3 {
     grid-column: 1/ span 4;
 }
 
+.education {
+    background-color: rgb(0, 0, 128,.5);
+    margin: 5px; 
+    border: navy 2px solid;
+}
+
 .volunteerskillsarea {
     display: grid;
     grid-template: 20% 80%/1fr 1fr 1fr;
@@ -121,15 +132,28 @@ h3 {
 .volunteerarea {
     grid-area: 1/1/span 2/span 1;
     display: grid;
-    grid-template: 1fr/1fr;
-    border: solid white 5px;
+    grid-template: 20% 80%/1fr;
+
+}
+.volunteercolumn {
+    background-color: rgb(0, 0, 128,.5);
+    margin: 5px; 
+    border: navy 2px solid;
 }
 
 .skillarea {
     grid-area: 1/2/span 2/ span 2;
     display: grid;
     grid-template: 20% 80%/50% 50%;
-    border: solid white 5px;
+}   
+
+.skillcolumns{
+    background-color: rgb(0, 0, 128,.5);
+    margin: 5px; 
+    border: navy 2px solid;
+    grid-area: 2/1/span 2/span 2;
+    display: grid; 
+    grid-template: 0px/50% 50%;
 }
 
 #skillheader {
@@ -154,6 +178,13 @@ ul.skilllist {
 }
 
 .hobbiesarea {
+
+}
+
+.hobby{
+    background-color: rgb(0, 0, 128,.5);
+    margin: 5px; 
+    border: navy 2px solid;
     display: grid;
     grid-template: 20% 80%/ 1fr 1fr 1fr;
 }
