@@ -1,6 +1,5 @@
 /* Nav & shared Styling */
 
-
 nav {
     background-color: rgba(31, 30, 87, 1);
     display: flex;
@@ -45,18 +44,27 @@ div {
 
 /* Home styling */
 .homebody {
-    position: relative; 
+    position: relative;
+}
+
+.homebody section {
+    background-color:rgba(31, 30, 87, .5);
+    padding: 10px;
+    overflow: clip;
 }
 
 .biophoto {
-    border: inset 5px lightgray;
+    border: inset 5px rgb(12, 11, 44);
     margin: 5px;
 }
 
 .LI {
     color: white;
-    text-decoration: none;
-    font-style: italic;
+    padding-top: 5px; 
+}
+
+.LI:hover {
+    font-style: italic; 
 }
 
 .bioinfo {
@@ -67,20 +75,27 @@ div {
 .bio {
     display: flex;
     justify-content: center;
+
 }
 
 .introarea {
     text-align: center;
+
+}
+.introarea p {
+    margin-block-start: auto; 
 }
 
 .petsarea {
     text-align: center;
     padding: 10px;
+
 }
 
 .petcolumns {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    grid-column-gap: 1em; 
 }
 
 #petsheader {
@@ -99,6 +114,10 @@ div {
 
 }
 
+.stylingdiv {
+    height: 10vh; 
+}
+
 form {
     background-color: rgba(31, 30, 87, 1);
     color: white;
@@ -106,7 +125,7 @@ form {
     position: fixed;
     width: 100%;
     bottom: 0;
-    left: 0; 
+    left: 0;
 }
 
 .forminfo {
@@ -122,6 +141,7 @@ label {
 
 .formintro {
     font-family: cursive;
+    font-size:large;
 }
 
 .submit {
@@ -136,7 +156,7 @@ label {
 }
 
 .thankyou {
-    background-color: rgb(0, 0, 128, .5);
+    background-color: rgba(31, 30, 87, .5);
     border: double navy 7px;
     text-align: center;
     padding: 10px;
@@ -157,12 +177,12 @@ label {
 
 .tylink {
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /* About styling */
 .aboutbody h3 {
-    background-color: navy;
+    background-color: rgba(31, 30, 87, 1);
     color: white;
     padding: 5px;
 }
@@ -172,7 +192,7 @@ label {
 }
 
 .previous {
-    background-color: rgb(0, 0, 128, .5);
+    background-color: rgba(31, 30, 87, .5);
     margin: 5px auto;
     border: navy 2px solid;
 }
@@ -189,7 +209,7 @@ label {
 }
 
 .education {
-    background-color: rgb(0, 0, 128, .5);
+    background-color: rgba(31, 30, 87, .5);
     border: navy 2px solid;
 }
 
@@ -208,7 +228,7 @@ label {
 }
 
 .volunteercolumn {
-    background-color: rgb(0, 0, 128, .5);
+    background-color: rgba(31, 30, 87, .5);
     border: navy 2px solid;
 }
 
@@ -220,7 +240,7 @@ label {
 }
 
 .skillcolumns {
-    background-color: rgb(0, 0, 128, .5);
+    background-color: rgba(31, 30, 87, .5);
     border: navy 2px solid;
     grid-area: 2/1/span 2/span 2;
     display: grid;
@@ -256,7 +276,7 @@ ul.skilllist {
 }
 
 .hobby {
-    background-color: rgb(0, 0, 128, .5);
+    background-color: rgba(31, 30, 87, .5);
     border: navy 2px solid;
     grid-row: 2/span 1;
     grid-column: 1/span 3;
@@ -311,19 +331,34 @@ ul.skilllist {
     .navitem {
         width: auto;
     }
+
+    .homebody {
+        overflow: scroll; 
+    }
+
     .petcolumns {
-        display: block; 
+        display: block;
     }
 
     .petphoto {
         margin: auto;
     }
+    
+    .stylingdiv {
+        display: none;
+    }
 
     form {
         flex-direction: column;
-        position: relative; 
-        bottom: auto; 
-        left: auto; 
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 0px;
+    }
+
+    .formintro {
+        margin-top: 0px; 
+        padding-top: 5px; 
     }
 
     .educationarea {
