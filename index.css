@@ -387,6 +387,10 @@ ul.skilllist {
         display: block;
     }
 
+    .skillarea {
+        display: block;
+    }
+
     .hobby {
         display: block;
     }
