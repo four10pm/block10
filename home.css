@@ -1,0 +1,173 @@
+/* Home styling */
+.homebody {
+    position: relative;
+}
+
+.homebody section {
+    background-color: rgba(31, 30, 87, .5);
+    padding: 10px;
+    overflow: clip;
+}
+
+.biophoto {
+    border: inset 5px rgb(12, 11, 44);
+    margin: 5px;
+}
+
+.LI {
+    color: white;
+    padding-top: 5px;
+}
+
+.LI:hover {
+    font-style: italic;
+}
+
+.bioinfo {
+    display: block;
+    padding: 10px;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+
+}
+
+.introarea {
+    text-align: center;
+
+}
+
+.introarea p {
+    margin-block-start: auto;
+}
+
+.petsarea {
+    text-align: center;
+    padding: 10px;
+
+}
+
+.petcolumns {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 1em;
+}
+
+#petsheader {
+    grid-column: 1/span 2;
+    text-align: center;
+}
+
+.petphoto {
+    border: rgb(31, 30, 87) solid 2px;
+    height: 250px;
+    width: 100%;
+    margin: 5px;
+}
+
+.petphotoarea {
+    padding-bottom: 20px;
+
+}
+
+.stylingdiv {
+    height: 10vh;
+}
+
+form {
+    background-color: rgba(31, 30, 87, 1);
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.forminfo {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+label {
+    padding: 0 5px 0 5px;
+}
+
+.formintro {
+    font-family: cursive;
+    font-size: large;
+}
+
+.submit {
+    margin: 1em;
+}
+
+/* Submission styling */
+.thankyouarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.thankyou {
+    background-color: rgba(31, 30, 87, .5);
+    border: double rgb(31, 30, 87) 7px;
+    text-align: center;
+    padding: 10px;
+    width: max-content;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+}
+
+.tytext {
+    padding-bottom: 10px;
+}
+
+.tybutton {
+    background-color: rgb(31, 30, 87);
+    border-color: rgb(31, 30, 87);
+    color: white;
+}
+
+.tylink {
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:768px) {
+    .homebody {
+        overflow: scroll;
+        margin: 0px;
+    }
+
+    .petcolumns {
+        display: block;
+    }
+
+    .petphoto {
+        margin: auto;
+        width: auto;
+    }
+
+    .stylingdiv {
+        display: none;
+    }
+
+    form {
+        flex-direction: column;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 0px;
+    }
+
+    .formintro {
+        margin-top: 0px;
+        padding-top: 5px;
+    }
+}

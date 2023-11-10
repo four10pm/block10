@@ -1,0 +1,170 @@
+/* About styling */
+.aboutbody h3 {
+    background-color: rgba(31, 30, 87, 1);
+    color: white;
+    padding: 5px;
+}
+
+.desc {
+    font-style: italic;
+}
+
+.previous {
+    background-color: rgba(31, 30, 87, .5);
+    margin: 5px auto;
+    border: rgb(31, 30, 87) 2px solid;
+}
+
+.educationarea {
+    display: grid;
+    grid-template: 1fr 3fr/ 1fr 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+#educationheader {
+    grid-column: 1/ span 4;
+}
+
+.education {
+    background-color: rgba(31, 30, 87, .5);
+    border: rgb(31, 30, 87) 2px solid;
+}
+
+.volunteerskillsarea {
+    display: grid;
+    grid-template: 1fr 3fr/1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.volunteerarea {
+    grid-area: 1/1/span 2/span 1;
+    display: grid;
+    grid-template: 1fr 5fr/1fr;
+    padding: 0px;
+}
+
+.volunteercolumn {
+    background-color: rgba(31, 30, 87, .5);
+    border: rgb(31, 30, 87) 2px solid;
+}
+
+.skillarea {
+    grid-area: 1/2/span 2/ span 2;
+    display: grid;
+    grid-template: 1fr 5fr/50% 50%;
+    padding: 0px;
+}
+
+.skillcolumns {
+    background-color: rgba(31, 30, 87, .5);
+    border: rgb(31, 30, 87) 2px solid;
+    grid-area: 2/1/span 2/span 2;
+    display: grid;
+    grid-template: 0px/50% 50%;
+}
+
+#skillheader {
+    grid-row: 1/span 1;
+    grid-column: 1/span 2;
+}
+
+#skillcolumn1 {
+    grid-row: 2/span 1;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+#skillcolumn2 {
+    grid-row: 2/ span 1;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+ul.skilllist {
+    list-style: none;
+    padding: 0px;
+}
+
+.hobbiesarea {
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.hobby {
+    background-color: rgba(31, 30, 87, .5);
+    border: rgb(31, 30, 87) 2px solid;
+    grid-row: 2/span 1;
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template: 0px/1fr 1fr 1fr;
+}
+
+#hobbyheader {
+    grid-row: 1/span 1;
+    grid-column: 1/4;
+}
+
+#hobbyBaking {
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+}
+
+#hobbyJournal {
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+}
+
+#hobbyHiking {
+    grid-row: 2/span 1;
+    grid-column: 3/span 1;
+}
+
+.hobbyphoto {
+    height: 250px;
+    width: 335px;
+    border: rgb(31, 30, 87) solid 1px;
+}
+
+@media(max-width:768px) {
+    .aboutbody {
+        margin: 0px;  
+    }
+
+    .aboutbody section {
+        margin: 1px;
+    }
+    
+    .educationarea {
+        display: block;
+    }
+
+    .education {
+        margin-top: 5px;
+    }
+
+    .volunteerskillsarea {
+        display: block;
+    }
+
+    .skillarea {
+        display: block;
+    }
+
+    .skillcolumns {
+        margin-top: 5px;
+        display: block;
+    }
+
+    .volunteercolumn {
+        margin-top: 5px;
+    }
+
+    .hobby {
+        display: block;
+    }
+
+   
+}

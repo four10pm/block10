@@ -1,0 +1,38 @@
+/* Portfolio styling */
+.project {
+    display: flex;
+    border: dotted rgba(31, 30, 87, 1) 2px;
+    background-color: rgba(31, 30, 87, .5);
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.projectimage {
+    border: rgb(31, 30, 87) solid 2px;
+    height: auto;
+    width: 475px;
+    margin: 5px;
+}
+
+.project a {
+    color: white;
+}
+
+.project a:hover {
+    font-style: italic;
+}
+
+@media(max-width:768px) {
+    .portfoliobody {
+        margin: 0px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .projectimage {
+        width: 90%;
+        align-self: center;
+    }
+}
